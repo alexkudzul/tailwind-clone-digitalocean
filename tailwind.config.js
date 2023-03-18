@@ -4,6 +4,10 @@ module.exports = {
    utility class (html, js, vue, etc) para ser compiladas */
   content: ['./*.html'],
   theme: {
+    // Evitamos poner siempre px-5 en los container.
+    container: {
+      padding: '1.4rem',
+    },
     extend: {
       fontFamily: {
         /** sans es el font por defecto que utiliza tailwind, se sobrescribirá con
