@@ -47,7 +47,7 @@
     <!-- Navbar I End -->
 
     <!-- Navbar II -->
-    <div class="shadow-md">
+    <div class="relative z-10 shadow-md">
       <div class="container mx-auto flex justify-between items-center py-5">
         <div class="flex items-center gap-x-6 font-medium">
           <img
@@ -125,13 +125,20 @@
     <!-- Navbar II End -->
 
     <!-- Main -->
-    <div>
-      <div class="flex container mx-auto">
+    <div
+      class="relative z-0 pt-32 pb-48"
+      style="
+        background: #f9fafe no-repeat center
+          url(https://www.digitalocean.com/static/hero-bg-animation-ef666767f909d3b76122f0279a8bf16d.svg);
+        background-size: cover;
+      "
+    >
+      <div class="flex items-center container mx-auto">
         <div class="w-1/2">
           <h1 class="text-6xl font-bold tracking-tighter">
             The cloud is complex. We make it simple.
           </h1>
-          <p class="text-xl text-gray-500 font-medium mt-5">
+          <p class="text-2xl text-gray-500 font-medium tracking-tighter mt-5">
             The cloud computing services you need, with the predictable pricing,
             developer-friendly features, and scalability you’ll love.
           </p>
@@ -143,16 +150,19 @@
           <form action="#">
             <div class="flex flex-col gap-y-5 w-4/5">
               <input
-                class="px-5 py-4 rounded-lg border border-gray-400"
+                class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-500 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none"
                 type="text"
+                placeholder="First name"
               />
               <input
-                class="px-5 py-4 rounded-lg border border-gray-400"
+                class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-500 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none"
                 type="text"
+                placeholder="Email"
               />
               <input
-                class="px-5 py-4 rounded-lg border border-gray-400"
+                class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-500 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none"
                 type="password"
+                placeholder="Password"
               />
 
               <div class="flex justify-between gap-x-4">
@@ -161,7 +171,9 @@
                 >
                   Deploy in seconds
                 </button>
-                <button class="bg-gray-200 px-3 py-3 rounded-lg">
+                <button
+                  class="px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                >
                   <img
                     data-src="https://www-static.cdn.prismic.io/www-static/7b66f955-63dd-41f5-a403-e6727b24d4ea_google-logo.svg"
                     src="https://www-static.cdn.prismic.io/www-static/7b66f955-63dd-41f5-a403-e6727b24d4ea_google-logo.svg"
@@ -169,7 +181,9 @@
                     class="null blur-up css-1pq2esu ls-is-cached lazyloaded"
                   />
                 </button>
-                <button class="bg-gray-200 px-3 py-3 rounded-lg">
+                <button
+                  class="px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                >
                   <img
                     data-src="https://www-static.cdn.prismic.io/www-static/0a3e37e0-1706-41d5-98d1-854585205a5e_github-logo.svg"
                     src="https://www-static.cdn.prismic.io/www-static/0a3e37e0-1706-41d5-98d1-854585205a5e_github-logo.svg"

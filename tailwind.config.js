@@ -22,6 +22,10 @@ module.exports = {
         'do-blue-light': 'rgb(0, 105, 255)',
         'do-blue-lighter': '#f9fafe',
       },
+      boxShadow: {
+        'input': '0 5px 1px 0 rgba(0,0,0,0.1)',
+        'input-focus': '0 2px 1px 0 rgb(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [],
