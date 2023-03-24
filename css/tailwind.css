@@ -7,3 +7,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply px-5 py-3 rounded-lg bg-do-blue-light text-white hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 font-bold;
+  }
+
+  .panel {
+    @apply bg-white rounded-lg shadow-lg px-5 py-5;
+  }
+}
