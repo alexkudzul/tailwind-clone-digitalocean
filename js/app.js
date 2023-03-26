@@ -30,12 +30,12 @@ Vue.component('link-cascadia', {
 
 Vue.component('panel-blog', {
   template: `
-  <div class="w-1/4 bg-white shadow-lg rounded-lg">
+  <div class="flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-lg">
     <div>
       <slot name="image"></slot>
     </div>
 
-    <div class="px-6 py-6">
+    <div class="flex flex-col justify-between border px-6 py-6">
       <div class="uppercase text-sky-500 tracking-widest">
         <slot name="type"></slot>
       </div>
@@ -43,10 +43,10 @@ Vue.component('panel-blog', {
         <slot name="title"></slot>
       </div>
       <div class="flex text-sm text-gray-500">
-        <div class="w-1/2">
+        <div class="w-2/3 shrink-0">
           <slot name="date"></slot>
         </div>
-        <div class="flex items-center w-1/2">
+        <div v-if="$slots.visits" class="flex items-center w-1/2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
